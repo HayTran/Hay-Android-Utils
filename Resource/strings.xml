@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">iOT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="picker_color">Select your color</string>
+    <string name="edit_text_warning_incorrect_format">Incorrect format</string>
+    <string name="edit_text_warning_higher_request">Must be higher low value</string>
+    <string name="edit_text_warning_lower_request">Must be lower high value</string>
+    <string name="edit_text_warning_higher_0_request">Must be higher 0</string>
+    <string name="edit_text_warning_lower_100_request">Must be lower 100</string>
+    <string name="edit_text_warning_lower_64_request">Must be lower 64</string>
+
+    <string name="warning_fulfill_all_field">You must fulfill into email and password field</string>
+    <string name="warning_email_do_not_conform_pattern">Email do not conform email pattern</string>
+    <string name="warning_different_password">Password and confirm password is not same</string>
+    <string name="warning_be_strong_password">Password should be at least 6 characters</string>
+    <string name="warning_ask_make_sure_log_out">Are you sure?</string>
+    <string name="error_email_already_in_use">Email already in use</string>
+    <string name="error_invalid_email_password">Email or password is invalid</string>
+    <string name="error_network_disconnected">Network is not connected</string>
+    <string name="error_too_many_wrong_request">Too many wrong request, please wait</string>
+    <string name="error_unknown">Unknown error</string>
+
+</resources>

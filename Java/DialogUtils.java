@@ -39,26 +39,40 @@ public class DialogUtils {
             }
         });
     }
+
     public static void showProgressDialog(final Context mContext) {
-       showDialog(mContext,SweetAlertDialog.PROGRESS_TYPE,"Processing","Please wait...",
-               null, null, null, null);
+        showDialog(mContext, SweetAlertDialog.PROGRESS_TYPE, "Processing", "Please wait...",
+                null, null, null, null);
     }
 
 
     public static void showSuccessDialog(final Context mContext, final String content) {
-       showDialog(mContext, SweetAlertDialog.SUCCESS_TYPE,"Success" ,content,
-               null, null,null, null);
-    }
-    public static void showWarningDialog(final Context mContext, final String content) {
-        showDialog(mContext, SweetAlertDialog.WARNING_TYPE,"Warning",
-                content,null, null,null, null);
-    }
-    public static void showErrorDialog(final Context mContext, final String content) {
-        showDialog(mContext, SweetAlertDialog.ERROR_TYPE,"Error",
-                content,null, null,null, null);
+        showDialog(mContext, SweetAlertDialog.SUCCESS_TYPE, "Success", content,
+                null, null, null, null);
     }
 
-    public static void dismissDialog(){
+    public static void showWarningDialog(final Context mContext, final String content) {
+        showDialog(mContext, SweetAlertDialog.WARNING_TYPE, "Warning",
+                content, null, null, null, null);
+    }
+
+    public static void showWarningDialog(final Context mContext, final String content, String confirmText,
+                                         String cancelText, SweetAlertDialog.OnSweetClickListener confirmListener) {
+        showDialog(mContext, SweetAlertDialog.WARNING_TYPE, "Warning",
+                content, confirmText, cancelText, confirmListener, null);
+    }
+    public static void showLogOutDialog(final Context mContext, final String content,
+                                        String confirmText, String cancelText, SweetAlertDialog.OnSweetClickListener confirmListener) {
+        showDialog(mContext, SweetAlertDialog.WARNING_TYPE, "Log out",
+                content, confirmText, cancelText, confirmListener, null);
+    }
+
+    public static void showErrorDialog(final Context mContext, final String content) {
+        showDialog(mContext, SweetAlertDialog.ERROR_TYPE, "Error",
+                content, null, null, null, null);
+    }
+
+    public static void dismissDialog() {
         if (mDialog != null) {
             mDialog.dismiss();
         }
